@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practice responsive price table</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		/* body{
+			border: 2px solid black;
+		} */
+		*{
+			box-sizing: border-box;
+		}
+     .heading{
+		 text-transform: uppercase;
+		 color: tomato;
+		 font-size: 40px;
+		 font-weight: bold;
+		 text-align: center;
+		 padding: 20px 0px 0px 0px;
+	 }
+	 .heading1{
+		 text-transform: uppercase;
+		 color: tomato;
+		 font-size: 40px;
+		 font-weight: bold;
+		 text-align: center;
+		 /* padding: 20px 0px 30px 0px; */
+	 }
+      
+	  .column{
+		  width: 25%;
+		  float: left;
+		  padding-left: 10px;
+	  }
+
+	  .box{
+		  list-style: none;
+		  border-bottom: 3px solid rgb(11, 255, 3);
+          margin: 0px;
+		  padding: 0px;
+		  -webkit-transition: 0.5s;
+		  transition: 0.5s;	 
+		  border-radius: 40px;
+	  }
+
+	 .box:hover{
+		 box-shadow: 0 18px 22px 0 rgba(26, 25, 25, 0.6);
+	 }      
+
+     .box .head{
+		 background-color: blue;
+		 border-bottom: 1px solid white;
+		 padding: 20px;
+		 font-size: 25px;
+		 text-align: center;
+	 }
+	 .box .head:hover{
+		 background-color: black;
+		 color: white;
+		 transition: 0.5s;
+	 }
+
+	 .box li{
+		 border-bottom: 1px solid white;
+		 padding: 20px;
+		 text-align: center;
+	 }
+
+	 .box .price{
+		 background-color:#eee;
+		 font-size: 20px;
+	 }
+   .box .thali{
+		font-size: 20px;
+		font-weight: bold;
+	}
+  .btn{
+	background-color: rgb(179, 38, 3);
+		 border: none;
+		 color: white;
+         text-decoration: none;
+		 font-size:16px;
+		 padding: 12px 20px;
+		 border-radius: 10px;
+		 text-transform: uppercase;
+  }
+  .btn:hover{
+	box-shadow: 2px 0px 5px 2px rgba(150, 7, 7, 1.0);
+	background-color: green;
+  }
+
+ 
+  @media only screen and (max-width: 600px){
+	  .column{
+		  width: 100%;
+		  padding-bottom: 30px;
+	  }
+  }
+
+
+
+	</style> 
+</head>
+<body>
+	<div class="heading">Combo Offer</div>
+	<div class="heading1">⇩</div>
+  <div class="column">
+	  <ul class="box">
+		  <li class="head">Pocket Friendly</li>
+		  <li class="price">Rs 100 / Plate</li>
+		  <li class="thali">Vej Thali</li>
+		  <li class="thali">+</li>
+		  <li class="thali">Cold Drink</li>
+		  <li>1GB Net</li>
+		  <li><a href="#" class="btn">Order Now</a></li>
+	  </ul>
+  </div>
+  <div class="column">
+	<ul class="box">
+		<li class="head">Intermediate</li>
+		<li class="price">Rs 150 / Plate</li>
+		<li class="thali">Vej Thali</li>
+		<li class="thali">+</li>
+		<li class="thali">Cold Drink</li>
+		<li>1GB Net</li>
+		<li><a href="#" class="btn">Order Now</a></li>
+	</ul>
+</div>
+<div class="column">
+	<ul class="box">
+		<li class="head">Special</li>
+		<li class="price">Rs 300 / Plate</li>
+		<li class="thali">Vej Thali</li>
+		<li class="thali">+</li>
+		<li class="thali">Cold Drink</li>
+		<li >1GB Net</li>
+		<li><a href="#" class="btn">Order Now</a></li>
+	</ul>
+</div>
+<div class="column">
+	<ul class="box">
+		<li class="head">Vip</li>
+		<li class="price">Rs 500 / Plate</li>
+		<li class="thali">Vej Thali</li>
+		<li class="thali">+</li>
+		<li class="thali">Cold Drink</li>
+		<li>1GB Net</li>
+		<li><a href="#" class="btn">Order Now</a></li>
+	</ul>
+</div>
+</body>
+</html>
