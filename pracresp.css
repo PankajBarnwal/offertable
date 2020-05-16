@@ -1,63 +1,92 @@
-      	*{
-    		
-    		box-sizing: border-box;
-    	}
-
-    	.column{
-    		float: left;
-    		width: 33.3%;
-            padding: 8px;
-    	}
-
-    	.box{
-           list-style: none;
-           border: 1px solid yellow;
-           margin: 0px;
-           padding: 0px;
-          -webkit-transition: 0.5s;
-           transition: 0.5s;
-    	}
-		.box:hover{
-			box-shadow: 0 18px 22px 0 rgba(26, 25, 25, 0.2);
+      *{
+			box-sizing: border-box;
 		}
+     .heading{
+		 text-transform: uppercase;
+		 color: tomato;
+		 font-size: 40px;
+		 font-weight: bold;
+		 text-align: center;
+		 padding: 20px 0px 0px 0px;
+	 }
+	 .heading1{
+		 text-transform: uppercase;
+		 color: tomato;
+		 font-size: 40px;
+		 font-weight: bold;
+		 text-align: center;
+		 /* padding: 20px 0px 30px 0px; */
+	 }
+      
+	  .column{
+		  width: 25%;
+		  float: left;
+		  padding-left: 10px;
+	  }
 
-		.box .header{
-			background-color: green;
-			border-bottom: 1px solid white;
-			padding: 20px;
-			font-size: 25px;
-			text-align: center;
-		}
-     .box .header:hover{
+	  .box{
+		  list-style: none;
+		  border-bottom: 3px solid rgb(11, 255, 3);
+          margin: 0px;
+		  padding: 0px;
+		  -webkit-transition: 0.5s;
+		  transition: 0.5s;	 
+		  border-radius: 40px;
+	  }
+
+	 .box:hover{
+		 box-shadow: 0 18px 22px 0 rgba(26, 25, 25, 0.6);
+	 }      
+
+     .box .head{
+		 background-color: blue;
+		 border-bottom: 1px solid white;
+		 padding: 20px;
+		 font-size: 25px;
+		 text-align: center;
+	 }
+	 .box .head:hover{
 		 background-color: black;
 		 color: white;
 		 transition: 0.5s;
 	 }
-     .box li{
+
+	 .box li{
 		 border-bottom: 1px solid white;
 		 padding: 20px;
 		 text-align: center;
 	 }
 
-	 .box .grey{
-        background-color: #eee;	
-		font-size: 20px;	 
+	 .box .price{
+		 background-color:#eee;
+		 font-size: 20px;
 	 }
-
-	 .button{
-		 background-color: rgb(179, 38, 3);
+   .box .thali{
+		font-size: 20px;
+		font-weight: bold;
+	}
+  .btn{
+	background-color: rgb(179, 38, 3);
 		 border: none;
 		 color: white;
          text-decoration: none;
 		 font-size:16px;
-		 padding: 10px 20px;
+		 padding: 12px 20px;
 		 border-radius: 10px;
-	 }
-  
+		 text-transform: uppercase;
+  }
+  .btn:hover{
+	box-shadow: 2px 0px 5px 2px rgba(150, 7, 7, 1.0);
+	background-color: green;
+  }
+
+ 
   @media only screen and (max-width: 600px){
 	  .column{
 		  width: 100%;
+		  padding-bottom: 30px;
 	  }
   }
+
  
   
